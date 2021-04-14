@@ -83,3 +83,19 @@ INSERT INTO Categoria(descricao) VALUES ('Papelaria');
 INSERT INTO Categoria(descricao) VALUES ('Eletronicos');
 INSERT INTO Categoria(descricao) VALUES ('Comida');
 INSERT INTO Categoria(descricao) VALUES ('Higiene');
+
+USE dbempresa
+GO
+CREATE VIEW vwFuncionario AS
+SELECT cod_func,
+       nome,
+       data_admissao
+FROM funcionario;
+GO
+
+CREATE VIEW vwProduto AS
+SELECT cod_prod,
+       descricao,
+       preco
+FROM prooduto;
+GO
